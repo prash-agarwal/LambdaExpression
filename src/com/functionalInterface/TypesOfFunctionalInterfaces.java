@@ -44,14 +44,12 @@ public class TypesOfFunctionalInterfaces {
 		consumer.accept("Q"); //o/p - QQQQ    
 
 		//Supplier FI - IT ONLY RETURNS SOMETHING and does'nt take any input.
-		//get is the abstract method in consumer FI.
+		//get is the abstract method in Supplier FI.
 		Supplier<String> supplier = () -> "This is the value from supplier FI";
 		System.out.println(supplier.get()); //o/p - "This is the value from supplier FI"
 
 		Supplier<String> supplier2 = () -> UUID.randomUUID().toString();
-		System.out.println("supplier2 " + supplier2.get()); //o/p - "supplier2 anyRandomId"
-
-		
+		System.out.println("supplier2 " + supplier2.get()); //o/p - "supplier2 anyRandomId";
 
 		// Find the summation of the given element in the array list.
 
@@ -70,10 +68,14 @@ public class TypesOfFunctionalInterfaces {
 		System.out.println("Value of the arr is " + sumEven + "Odd value " +  sumOdd);
 		
 		//Stream is a Pipeline of data
-//		streams in Java are introduced in Java 8 that allows for processing sequences of 
-//		elements, such as collections. Streams can perform operations like filtering, mapping,
-//		and reducing, and are designed to work in a lazy manner
-//		Supports operations like map, filter, and reduce.	
+		
+//		The Stream API in Java was introduced in Java 8 and is part of the java.util.stream 
+//		package. It is used to process collections of data in a functional and declarative 
+//		style. The Stream API allows you to perform complex data manipulations such as 
+//		filtering, mapping, and reducing on collections (like List, Set, Map, etc.) in a clean
+//		and readable manner. It supports operations like map, filter, reduce, collect, etc., 
+//		and enables parallel and sequential execution of operations.
+		
 		//here forEach is used to print the data in streams.
 		arr2.stream().forEach(x -> System.out.println(x));
 		

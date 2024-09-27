@@ -2,10 +2,22 @@ package com.functionalInterface;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class InterfacfeExample {
+public class InterfacfeExample{
 
+	//Functional interfaces are introduced to support lambda expressions and 
+	//method references in Java.
+	//Using functional interfaces, you can write more concise and readable code 
+	//with lambda expressions.
+	//Code using lambda expressions and method references is often easier to read 
+	//and understand, especially for simple functional behaviors.
+	
+	//Many methods in the Java Stream API are designed to work with functional 
+	//interfaces, making it easier to work with collections and perform bulk 
+	//operations.
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		// Anonymous Inner Class implementation of a functional interface.
 		
 //		FunctionalInterfaceExamples obj = new FunctionalInterfaceExamples() {
 //
@@ -20,15 +32,18 @@ public class InterfacfeExample {
 // Through this we are creating object of Interface but implementation is defined in 
 // anonymous Inner class.		
 		
+// By this way, we cannot override the non-abstract	methods in this Anonymous Inner Class.
+//	This Anonymous Inner class we can implement more than 1 abstract methods but Interface used should not be FI.
+//	System.out.println(obj.displayShape());
+		
 // Another way of creating object of interface is:
-//	MyInterface obj = new MyClass(); where MyInterface is a Interface and MyClass is implementing
+//	FunctionalInterfaceExamples obj = new InterfacfeExample();// where MyInterface is a Interface and MyClass is implementing
 // method of MyInterface.		
 //		MyInterface obj is a reference of type MyInterface.
 //		Thus, obj is a reference to an object of type MyClass, but it is treated as an instance 
 //	of MyInterface. This practice leverages polymorphism, allowing for more flexible and maintainable code.		
 //
-//		This Anonymous Inner class we can implement more than 1 abstract methods but Interface used should not be FI.
-//		System.out.println(obj.displayShape());
+
 		
 		
 		
@@ -89,7 +104,5 @@ public class InterfacfeExample {
 		
 		System.out.println();
 		arr.forEach((n)->System.out.println(n));
-		
-		
 	}
 }
